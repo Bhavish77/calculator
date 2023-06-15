@@ -42,8 +42,24 @@
     align-items: flex-end;
     justify-content: space-around;
     flex-direction: column;
-    padding: 10px;
-    word-wrap: break-word;
+    padding: 10px;         /*The word-wrap property has two possible values:
+
+normal (default): Lines will only break at normal word boundaries. If a word is too long to fit within the container's width, it will overflow and extend beyond the container's boundaries.
+
+break-word: Long words will be broken and wrapped to fit within the container's width. This means that if a single word is too long to fit, it will be split at an arbitrary point to create multiple lines for that word.*/
+    word-wrap: break-word;    /*The word-break CSS property is used to control how words should be broken and wrapped when the text content overflows the boundaries of its container. It specifies the handling of words and characters within a line of text when the available space is limited.
+
+The word-break property has several possible values:
+
+normal (default): Words will break at allowed break points (such as spaces or hyphens) according to the language-specific rules. If no suitable break point is found, the word may overflow the container.
+
+break-all: Words will be broken at any character, even if it means breaking within the characters themselves. This can result in inconsistent and uneven word breaks.
+
+keep-all: Words will not be broken even if the available space requires it. This is useful for languages like Chinese, Japanese, and Korean, where breaking within words is typically avoided.
+
+break-word: Similar to break-all, this value allows breaking within words, but it also considers hyphenation opportunities provided by soft hyphens (&shy;) if present. It provides a more controlled way to break long words.
+
+*/
     word-break: break-all;
   }
   
